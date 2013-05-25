@@ -156,7 +156,7 @@ int legal_hostname(char *name)
 
       if (!first && 
 	  ((c >= '0' && c <= '9') ||
-	   c == '-' || c == '_'))
+	   c == '-' || c == '_' || c == "'"))
 	continue;
 
       /* end of hostname part */
